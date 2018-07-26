@@ -1,0 +1,40 @@
+
+.component-dashboard {
+  background-color: #eee;
+  padding: 1rem;
+
+  &.absolute {
+    position: relative;
+    height: 100%;
+
+    .absolute-segment {
+      position: absolute;
+      border-radius: .5rem;
+      box-shadow: .1rem .1rem 1rem .1rem #333;
+      background-color: white;
+      padding: 1rem;
+    }
+  }
+
+  .dashboard-row {
+    display: flex;
+    margin-top: 1rem;
+    overflow-x: auto;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .dashboard-widget {
+    margin: 0 1rem 0 0;
+    border: solid 1px #777;
+    padding: 1rem;
+    overflow: auto;
+    flex: 1 1 auto;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
